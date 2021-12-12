@@ -8,7 +8,13 @@ console.log("Hello world")
 
 function computerPlay() {
     randNum = Math.floor(Math.random() * 100);
-    return randNum;
+    if (33 < randNum && randNum< 66) {
+        return "Rock";
+    } else if (randNum < 33) {
+        return "Paper"; 
+    } else {
+        return "Scissors";
+    }
 }
 
 console.log(computerPlay());
