@@ -17,6 +17,17 @@ function computerPlay() {
     }
 }
 
+//Create a function that plays a single round of Rock-Paper-Scissor.
+//The function will take two parameters - one for the players selecetion,
+//and one for the computer's selection. It should return a string announcing a winner,
+//somthing like "You lose! Paper beats rock!" I plan to have three separate conditionals,
+//each addressing a particular outcome with a corresponding return string indicating 
+//who won.
+
+function playRound(playerSelection, computerSelection) {
+    
+}
+
 console.log(computerPlay());
 
 
