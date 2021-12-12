@@ -6,3 +6,11 @@ console.log("Hello world")
 //depending on the number generated (i.e. 0-0.33 return "Rock", 0.34-0.66 return "Paper", etc.)
 
 
+function computerPlay() {
+    randNum = Math.floor(Math.random() * 100);
+    return randNum;
+}
+
+console.log(computerPlay());
+
+
