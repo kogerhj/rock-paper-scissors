@@ -8,12 +8,12 @@ console.log("Hello world")
 
 function computerPlay() {
     randNum = Math.floor(Math.random() * 100);
-    if (33 < randNum && randNum< 66) {
-        return "Rock";
+    if (33 < randNum && randNum < 66) {
+        return "rock";
     } else if (randNum < 33) {
-        return "Paper"; 
+        return "paper";
     } else {
-        return "Scissors";
+        return "scissors";
     }
 }
 
@@ -26,27 +26,32 @@ function computerPlay() {
 //each addressing a particular outcome with a corresponding return string indicating 
 //who won. The playerSelection parameter needs to be case-insensitive.
 
-const playerSelection = "Scissors";
+const playerSelection = "Rock";
 
 const computerSelection = computerPlay();
 
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection == computerSelection) {
+
+    let newAnswer = playerSelection.toLowerCase();
+
+    if (newAnswer == computerSelection) {
         return "It's a tie!";
-    } else if (playerSelection == "Rock" && computerSelection == "Scissors") {
+    } else if (newAnswer == "rock" && computerSelection == "scissors") {
         return "You win! Rock crushes Scissors!"
-    } else if (playerSelection == "Rock" && computerSelection == "Paper") {
+    } else if (newAnswer == "rock" && computerSelection == "paper") {
         return "You lose! Paper (somehow) smothers Rock!"
-    } else if (playerSelection == "Scissors" && computerSelection == "Paper") {
+    } else if (newAnswer == "scissors" && computerSelection == "paper") {
         return "You win! Scissors cut up Paper!"
-    } else if (playerSelection == "Scissors" && computerSelection == "Rock") {
+    } else if (newAnswer == "scissors" && computerSelection == "rock") {
         return "You lose! Rock crushes scissors!"
-    } else if (playerSelection == "Paper" && computerSelection == "Scissors") {
+    } else if (newAnswer == "paper" && computerSelection == "scissors") {
         return "You lose! Scissors cut up Paper!"
-    } else if (playerSelection == "Paper" && computerSelection == "Rock") {
+    } else if (newAnswer == "paper" && computerSelection == "rock") {
         return "You win! Paper (somehow) smothers Rock"
     }
 }
+
+
 
 
 
