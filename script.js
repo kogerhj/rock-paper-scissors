@@ -24,9 +24,12 @@ function computerPlay() {
 //and one for the computer's selection. It should return a string announcing a winner,
 //somthing like "You lose! Paper beats rock!" I plan to have three separate conditionals,
 //each addressing a particular outcome with a corresponding return string indicating 
-//who won. The playerSelection parameter needs to be case-insensitive.
+//who won. The playerSelection parameter needs to be case-insensitive, amd it needs to
+//be entered via a prompt window.
 
-const playerSelection = "Rock";
+const promptMessage = "The computer wants to play! Please enter one of the following: rock, paper, or scissors"
+
+let playerSelection = prompt(promptMessage);
 
 const computerSelection = computerPlay();
 
@@ -51,10 +54,9 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-
-
-
-
 console.log(playRound(playerSelection, computerSelection));
+
+
+
 
 
