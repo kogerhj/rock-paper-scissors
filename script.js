@@ -1,4 +1,4 @@
-console.log("Hello world")
+console.log("Hello, friend!")
 
 //Create a function that will randomly return either "Rock", "Paper", "Scissors".
 //This function will provide the computer's play, so will be named computerPlay.
@@ -51,6 +51,8 @@ function playRound(playerSelection, computerSelection) {
         return "You lose! Scissors cut up Paper!"
     } else if (newAnswer == "paper" && computerSelection == "rock") {
         return "You win! Paper (somehow) smothers Rock"
+    } else {
+        return "Sorry, that is not a valid answer - please check spelling and try again."
     }
 }
 
