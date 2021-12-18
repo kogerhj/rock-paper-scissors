@@ -27,10 +27,17 @@ function computerPlay() {
 //who won. The playerSelection parameter needs to be case-insensitive, amd it needs to
 //be entered via a prompt window.
 
+//This is the message users get when they open the webpage, prompting them to enter their play
 const promptMessage = "The computer wants to play! Please enter one of the following: rock, paper, or scissors"
 
-let playerSelection = prompt(promptMessage);
+//This will tie the above promptMessage variable to the playerSelection variable, which will be used
+//in the playRound() function
+// let playerSelection = prompt(promptMessage);
 
+let playerSelection = "rock";
+
+//This will tie the computerPlay function above to the computerSelection parameter in the
+//playRound function
 const computerSelection = computerPlay();
 
 function playRound(playerSelection, computerSelection) {
@@ -56,7 +63,21 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-console.log(playRound(playerSelection, computerSelection));
+//Create a game() function that plays 5 rounds of rock-paper-scissors using 
+//the above playRound() function and a player's input (playerSelection). The
+//function should keep track of the score, and return a string a delcaring a 
+//winner. A loop should be utilized to call the playRound function 5 times.
+
+
+function game() {
+   for (let i = 1; i <= 5; i++) {
+      console.log(playRound(playerSelection, computerSelection))
+   }
+}
+   
+
+
+
 
 
 
