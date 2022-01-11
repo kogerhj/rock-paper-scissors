@@ -1,0 +1,31 @@
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #98c1d9;
+}
+
+.score {
+    background-color: #ee6c4d;
+    height: 400px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+button {
+    color: white;
+    font-size: 3rem;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: #293241;
+    border-radius: 6px;
+}
